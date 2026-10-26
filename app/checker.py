@@ -13,7 +13,7 @@ def check_rules(text, product):
     name = product["name"]
     price = product["price"]
     text = text.strip()
-
+    
     if text.count(".") != 3:
         violations.append(f"R1 문장 수 위반: 마침표가 {text.count('.')}개입니다.")
     if name not in text:
